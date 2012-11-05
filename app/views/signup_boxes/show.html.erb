@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @signup_box.name %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @signup_box.company %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @signup_box.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_signup_box_path(@signup_box) %> |
+<%= link_to 'Back', signup_boxes_path %>

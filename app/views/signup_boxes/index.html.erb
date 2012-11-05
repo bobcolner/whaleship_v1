@@ -1,0 +1,27 @@
+<h1>Listing signup_boxes</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Company</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @signup_boxes.each do |signup_box| %>
+  <tr>
+    <td><%= signup_box.name %></td>
+    <td><%= signup_box.company %></td>
+    <td><%= signup_box.email %></td>
+    <td><%= link_to 'Show', signup_box %></td>
+    <td><%= link_to 'Edit', edit_signup_box_path(signup_box) %></td>
+    <td><%= link_to 'Destroy', signup_box, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Signup box', new_signup_box_path %>
