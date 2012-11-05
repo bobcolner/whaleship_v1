@@ -1,4 +1,6 @@
 WhaleShip::Application.routes.draw do
+  resources :signup_boxes
+
   devise_for :users
 
   # The priority is based upon order of creation:
