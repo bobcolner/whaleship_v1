@@ -15,19 +15,18 @@ gem "stripe", ">= 1.7.4"
 gem "stripe_event", ">= 0.4.0"
 # ui layer
 gem "jquery-rails"
-gem "twitter-bootstrap-rails"
 
 group :assets do
   gem "sass-rails", "~> 3.2.3"
   gem "coffee-rails", "~> 3.2.1"
   gem "uglifier", ">= 1.0.3"
-end
 
-group :development, :test do
   gem "less-rails"
   gem "execjs"
   gem 'therubyracer', :platforms => :ruby
+end
 
+group :development, :test do
   gem "rspec-rails", ">= 2.11.4"
   gem "email_spec", ">= 1.2.1"
   gem "mongoid-rspec", ">= 1.4.6"
@@ -37,6 +36,8 @@ group :development, :test do
   gem "cucumber-rails", ">= 1.3.0", :require => false  
   gem "launchy", ">= 2.1.2"
   gem "quiet_assets", ">= 1.0.1"
+
+  gem "twitter-bootstrap-rails"
 end
 
 group :development do
