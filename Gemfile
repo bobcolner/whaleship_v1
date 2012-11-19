@@ -15,18 +15,19 @@ gem "stripe", ">= 1.7.4"
 gem "stripe_event", ">= 0.4.0"
 # ui layer
 gem "jquery-rails"
-# gem "twitter-bootstrap-rails"
+gem "twitter-bootstrap-rails"
 
 group :assets do
   gem "sass-rails", "~> 3.2.3"
-  # gem "less-rails"
-  # gem "execjs"
-  # gem 'therubyracer', :platforms => :ruby
   gem "coffee-rails", "~> 3.2.1"
   gem "uglifier", ">= 1.0.3"
 end
 
 group :development, :test do
+  gem "less-rails"
+  gem "execjs"
+  gem 'therubyracer', :platforms => :ruby
+
   gem "rspec-rails", ">= 2.11.4"
   gem "email_spec", ">= 1.2.1"
   gem "mongoid-rspec", ">= 1.4.6"
@@ -46,21 +47,11 @@ group :development do
   gem "pry-coolline"
   gem "pry-stack_explorer"
   gem "pry-exception_explorer"
+  gem "pry-vterm_aliases"
+  gem "pry-theme"
   gem "awesome_print"
 end
 
 group :production do
   gem "thin"
 end
-
-# To use ActiveModel has_secure_password
-# gem "bcrypt-ruby", "~> 3.0.0"
-
-# To use Jbuilder templates for JSON
-# gem "jbuilder"
-
-# Use unicorn as the app server
-# gem "unicorn"
-
-# Deploy with Capistrano
-# gem "capistrano"
