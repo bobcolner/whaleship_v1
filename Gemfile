@@ -23,7 +23,7 @@ group :assets do
 
   gem "less-rails"
   gem "execjs"
-  gem 'therubyracer', :platforms => :ruby
+  # gem 'therubyracer', :platforms => :ruby
 end
 
 group :development, :test do
